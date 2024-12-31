@@ -96,7 +96,7 @@ export default function EditPost() {
 
     if (isLoading) {
         return (
-        <Layout metaTitle="Home" metaDescription="Home Page">
+        <Layout metaTitle="Edit Post" metaDescription="Edit Post">
           <Flex justifyContent="center" alignItems="center" h="100vh">
             <Spinner size="xl" />
           </Flex>
@@ -106,15 +106,17 @@ export default function EditPost() {
     
     if (isError) {
         return (
-            <Flex alignItems="center" justifyContent="center" h="100vh" bg="gray.50">
+            <Layout metaTitle="Edit Post" metaDescription="Edit Post">
+            <Flex alignItems="center" justifyContent="center" h="100vh" bg="white">
                 <Heading as="h4" size="lg">Gagal mengambil data. Silakan coba lagi.</Heading>
             </Flex>
+            </Layout>
         );
     }
 
     return (
         <Layout metaTitle="Edit Post">
-        <Flex alignItems="center" justifyContent="center" h="100vh" bg="gray.50">
+        <Flex alignItems="center" justifyContent="center" h="100vh" bg="white">
             <Stack direction="column" spacing={8} maxW="400px" w="100%">
                 <Card
                     bg="white"
