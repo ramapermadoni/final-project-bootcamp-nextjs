@@ -57,7 +57,7 @@ export default function Home() {
         ? `/api/unlikes/post/${postId}` // If already liked, call unlike endpoint
         : `/api/likes/post/${postId}`; // If not liked, call like endpoint
   
-      console.log("URL endpoint:", endpoint);
+      // console.log("URL endpoint:", endpoint);
   
       const response = await mutate({
         url: endpoint,
@@ -65,7 +65,7 @@ export default function Home() {
         headers: { Authorization: `Bearer ${Cookies.get("user_token")}` },
       });
   
-      console.log("API Response:", response);
+      // console.log("API Response:", response);
   
       // Update state based on server response
       if (response?.success) {

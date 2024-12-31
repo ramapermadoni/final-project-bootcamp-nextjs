@@ -15,7 +15,7 @@ export const useQueries = ({ prefixUrl = null, headers = {}, enabled = true } = 
     setIsError(false);
 
     try {
-      console.log("Fetching data from:", `${API_HOST}${prefixUrl}`);
+      // console.log("Fetching data from:", `${API_HOST}${prefixUrl}`);
       const response = await fetch(`${API_HOST}${prefixUrl}`, {
         method: "GET",
         headers: memoizedHeaders,

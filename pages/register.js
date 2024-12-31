@@ -53,7 +53,7 @@ import {
     ...payload,
     dob: payload.dob ? payload.dob.toISOString().split("T")[0] : null, // Format yyyy-mm-dd
   };
-      console.log("payload => ", formattedPayload);
+      // console.log("payload => ", formattedPayload);
       const response = await mutate({ url: "/api/register", payload: formattedPayload });
     //   const response = await mutate({ url: "/api/register", payload });
       if (!response?.success) {

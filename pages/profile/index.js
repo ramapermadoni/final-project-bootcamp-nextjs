@@ -15,12 +15,12 @@ export default function Profile() {
 
     const HandleLogout = async () => {
         setIsLoggingOut(true);
-        console.log("Logout");
+        // console.log("Logout");
         try {
             const response = await mutate({ url: "/api/logout", method: "POST", headers: { Authorization: `Bearer ${Cookies.get("user_token")}` } });
-            console.log("response => ", response);
+            // console.log("response => ", response);
             if (!response?.success) {
-                console.log("Logout failed");
+                // console.log("Logout failed");
                 toast({
                     title: "Logout Gagal.",
                     description: "Proses logout gagal.",

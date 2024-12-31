@@ -6,7 +6,7 @@ export function middleware(request) {
     const isCookiesExist = !!request.cookies.get('user_token');//!! artinya boolean
     const isLoginPage = pathname.startsWith('/login');
     const isRegisterPage = pathname.startsWith('/register');
-    console.log("Middleware => ", isCookiesExist);
+    // console.log("Middleware => ", isCookiesExist);
     if (!isCookiesExist && !isLoginPage && !isRegisterPage) {
         return NextResponse.redirect(new URL('/login', request.url))
     }
