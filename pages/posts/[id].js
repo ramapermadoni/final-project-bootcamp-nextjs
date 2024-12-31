@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { Box, Text, Flex, Spinner, IconButton, Button } from "@chakra-ui/react";
 import { useQueries } from "@/hooks/useQueries";
 import Layout from "@/layout";
 import Cookies from "js-cookie";
-import { AiFillHeart, AiOutlineHeart, AiOutlineComment } from "react-icons/ai";
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import CommentsBottomSheet from "@/components/CommentsBottomSheet";
 
 export default function PostDetail() {

@@ -146,7 +146,7 @@ export default function EditPost() {
                         </Stack>
                     </CardBody>
                     <CardFooter flexDirection="column" gap={4}>
-                        <Button w="100%" colorScheme="teal" onClick={() => HandleSubmit()}>
+                        <Button w="100%" isLoading={isUpdating} colorScheme="teal" onClick={() => HandleSubmit()}>
                             Update Post
                         </Button>
                     </CardFooter>

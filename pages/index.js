@@ -2,11 +2,7 @@ import React, { useState, useRef } from "react";
 import {
   Box,
   Button,
-  Card,
-  CardBody,
-  CardHeader,
   Flex,
-  Heading,
   IconButton,
   Stack,
   Text,
@@ -19,7 +15,6 @@ import {
   AlertDialogHeader,
   AlertDialogContent,
   AlertDialogOverlay,
-  Center,
 } from "@chakra-ui/react";
 import { AiFillHeart, AiOutlineHeart, AiOutlineComment } from "react-icons/ai";
 import { useQueries } from "@/hooks/useQueries";

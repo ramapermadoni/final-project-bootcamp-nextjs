@@ -11,8 +11,6 @@ import {
     Textarea,
     Stack,
     useToast,
-    Box,
-    Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useMutation } from "@/hooks/useMutation";
