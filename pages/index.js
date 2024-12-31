@@ -106,7 +106,7 @@ export default function Home() {
         toast({
           title: "Success",
           description: "Post deleted successfully.",
-          status: "error",
+          status: "success",
           duration: 2000,
           isClosable: true,
           position: "top",
